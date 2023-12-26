@@ -1,0 +1,105 @@
+.class{
+webkit-border-radius:10px,chrome,safari,new opera version,
+-moz-border-radius:10px,mozilafire fox,
+-o-border-radius:10px,old version of opera
+-ms-border-radius:10px;microsoft edge,
+ border-radius:10px, normal use.
+}
+and we canne see if our system work with all exploitation system from link:https://caniuse.com/
+border radius we cann use for designe buttom 
+-----------------------------------------box------------------------------------------
+  box-shadow: 0 0 0 0 #eee inset,
+    20px 10px 18px 13px #b71010,
+    20px 10px 18px 13px #160f0f,
+    20px 10px 18px 13px #4e24a9;
+   box shadow for modified our elemet 
+box-siying:border-box 
+zou cann make configue in height and the other things without any change in our shema 
+-----------------------------------transition-----------------------------------------
+firstfull wee need te creat a hover after that we cann make ou code 
+transition-duration:5s 
+ transition-delay: 0.20s;
+    transition-property: width;
+    transition-timing-function: ease beggin fast finish slow
+                              :linear;the same beginen   
+                              :ease-in;begin slow finish normal
+                              :ease-out;begin fast finish normal
+short hand:we write only transition.
+           transition :width 2s.
+---------------------------------declaration--------------------
+wee nee add only ! important to our code and will be dominate 
+------------variablee-----------------------------
+some times wee need to change sothings in our code so the variabl it s the easy way like we cann see in our example
+:root{
+    --maincolor:blue; we open a root configue and we there what we need to change 
+}
+.main{
+    background-color:var(  --maincolor); we have also fall back value so we cann write the thing that remplaced 
+                                          our code if the main value deleted exam:var(  --maincolor,black)
+    color: white;
+    padding: 20px;
+}
+h2{
+    color: var(  --maincolor);
+    background-color: #eee;
+    padding: 20px;
+}
+p{
+    color: var(  --maincolor);
+    border: 2px solid var(  --maincolor);
+    padding: 20px;
+}
+a:hover{
+    color: var(  --maincolor);
+}
+ we can also make a value in variable to our padding
+:root{
+--mainpadding:20px;
+   
+}
+.a{
+ padding:var(--mainpadding)/we can do calcul with our variable exa:padding:cal(20px + var(--mainpadding))
+}
+PS:we can sometime make declaration to our inside our specific code.but the usfull way is inside the system.
+***********************************img-src-filters************************************************************
+wee need transition 
+filter:grasycal(100%) => black and white 
+we cann add a hover for we get more animation
+img:hover {
+filter:grasycal(0) => when we touch our picture she take original colore
+}
+filter:blur(4px) => our will be flow
+filter:invert(100%) => le contraire de limage
+************************************gradians*******************************************************************+
+background-imag:linear-gradians(direction,color1,color2,......,color stop)
+we can also modifie poucentage off collor for example
+    background-image: linear-gradient(to right,
+#2980b9 20%,
+#27ae60 20%,
+#27ae60 40%,
+red 40%,
+ red 60%,
+rgb(165, 38, 219) 60%
+,rgb(165, 38, 219) 80%
+,orange 80%); 
+*************************************pointer*******************************************************************
+caret-color:red ; slectioned elemet should be red ;
+pointer-event :none; => we nedd it for not touched again element touchend befor 
+************************************grid************************************************************************
+display:grid;
+grid-templat-columns:100px 100px 100px ; => we give to computer how many columns we need in our template .
+                     25% 25% 25% 25%   ; => pourcent element.
+                     auto auto auto ato; => automaticly .
+ps:we can mix our code from px, pourcent ,and finaly  auto default .
+we have function repat we can put inside how many  culmn we need to add and modified 
+-we have another type ou sising is fraction:1fr.
+like all say the fraction is gridy ,and the auto is shy ;
+so when we put them togheteher the fraction take the biggest surfce of our content given .
+grid-templat-rows:100px auto 200px => he accet all type of sizing mixed .
+row-gap:10px => the surface between rows.
+column-gap:10px the surface betwenn column.
+gap:[row gap][column gap]=> short hand code 
+PS: we cann add flex code to grid.
+
+
+ 

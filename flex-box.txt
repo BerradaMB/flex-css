@@ -1,0 +1,40 @@
+----------------------------flexbox-----------------------------------------------------
+there is 2 type off flex :
+-flex-box-father.this is for the context up.
+-flex-box-chlidreem.this is for the context down
+we will beggin with flex box father.
+********************************flex-box-father*********************************************
+display:flex; flex=> to start Flexible box 
+flex-direction:row         =>default value from left to right 
+flext-direction:row        =>normal with chagement effet in our code the same direction in default
+flex-direction:row-reverse =>they making in reverse direcrti without changing our page direction 
+flex-direction:column      =>normal column
+flex-direction:column-reverse=> fro butum to top inverse side off column
+flex-wrap when we add somthing to our flex father we put flex wrap for modifie our context 
+flex-wrap:wrap             =>for normal default 
+flex-wrap:wrap-reverse     =>for inerverse result 
+and the short hand off flex-direction and flex-wrap is flex-flow 
+flex-flow:row wrap.
+justify-content:flex-end => for modifie the added element in our code changing the place in end
+justify-content:center   => make it in the center 
+justify-content:space-between => this code organise all space from the width automaticly without using margin 
+justify-content:space-around  => for all spaces befor the element and after .
+justify-content:space evenly => for spaces around and between .
+align-items: stretch => default value 
+align-items:flex-start => begin from the ligne off our height given.
+align-items:flex-end => finish in the last ligne off our height given.
+align-items:center => center off our height given.
+align-content: flex-end => tak all content and make it in the last ling off our height given.
+align-content:flex-start => takk all content to the beginnen of our height given 
+align-content:space-between 
+              space-around
+              space-evenly 
+*********************************flex-box-child******************************************
+flex grow :1 => for growing our content
+flex shrenk:2 => forminimase the size off our content 
+order:2 => for changing the place off our element content 
+flex-basics => respect all rulle off width and we can remplace this code 
+flex : [flex grow][flex shrink][flex basics] short hand
+          only N     only N       N with px
+display:inline-flex we can writ what wee want in our context
+aligne self :start ,end ,center => can modified one content 
